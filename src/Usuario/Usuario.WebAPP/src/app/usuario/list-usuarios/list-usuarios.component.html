@@ -1,0 +1,49 @@
+<app-page-title
+  title="Usuários"
+  sub="Usuários / Listagem"
+  icon="user"
+></app-page-title>
+<app-painel col="12" title="Usuários">
+  <app-bar-search (onSearch)="teste($event)" placeholder="Pesquise o nome do usuário..."></app-bar-search>
+  <button (click)="newUsuario()" class="btn btn-dark mb-2">Novo Usuário</button>
+  <div class="table-responsive">
+    <table class="table table-striped table-hover">
+      <thead>
+        <tr>
+          <th>Cód.</th>
+          <th>Nome</th>
+          <th>Sobrenome</th>
+          <th>Email</th>
+          <th>Escolaridade</th>
+          <th>Data</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let usuario of usuarios">
+          <td>{{usuario.id}}</td>
+          <td>{{usuario.nome}}</td>
+          <td>{{usuario.sobrenome}}</td>
+          <td>{{usuario.email}}</td>
+          <td>{{usuario.escolaridade}}</td>
+          <td>{{usuario.data | date: 'dd/MM/yyyy'}}</td>
+          <td>
+            <button (click)="editUsuario(usuario.id)" class="btn btn-primary btn-sm">
+              <i class="fas fa-pencil-alt">
+
+              </i>
+            </button>
+          </td>
+          <td>
+            <button (click)="deleteUsuario(usuario.id)" class="btn btn-danger btn-sm">
+              <i class="fas fa-trash">
+
+              </i>
+            </button>
+          </td>
+        </tr>
+        <tr>
+      </tbody>
+    </table>
+  </div>
+</app-painel>

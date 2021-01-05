@@ -1,0 +1,22 @@
+<div class="grid-template">
+  <header class="header">
+    <a routerLink="/">crud</a>
+    
+  </header>
+  <aside class="aside">
+      <nav>
+          <ul>
+              <li routerLink="usuarios"  routerLinkActive="active">
+                  <span>Usuarios</span>
+                </li>
+          </ul>
+        </nav>
+  </aside>
+  <content class="content">
+      <router-outlet></router-outlet>
+  </content>
+  <footer class="footer">
+      <span>© 2020 Copyright: Henrique Santos</span>
+  </footer>
+ 
+</div>

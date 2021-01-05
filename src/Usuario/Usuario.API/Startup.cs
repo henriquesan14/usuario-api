@@ -13,6 +13,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using Usuario.API.Config;
 using Usuario.Core.Entities;
 using Usuario.Core.Entities.Validators;
 using Usuario.Core.Repositories;
@@ -37,11 +38,9 @@ namespace Usuario.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddCors(options =>
-            {
+            services.AddCors(options => {
                 options.AddPolicy(MyAllowSpecificOrigins,
-                    builder =>
-                    {
+                    builder => {
                         builder.AllowAnyOrigin()
                             .AllowAnyHeader()
                             .AllowAnyMethod();
@@ -49,6 +48,7 @@ namespace Usuario.API
             });
 
             services.AddControllers();
+            services.JsonSerializationConfig();
 
             services.AddDbContext<UsuarioContext>(c =>
                 c.UseSqlServer(Configuration.GetConnectionString("UsuarioConnection")), ServiceLifetime.Singleton);
@@ -77,13 +77,12 @@ namespace Usuario.API
 
             app.UseAuthorization();
 
+            app.UseCors(MyAllowSpecificOrigins);
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
             });
-
-
-            app.UseCors(MyAllowSpecificOrigins);
 
             app.UseSwagger();
             app.UseSwaggerUI(c =>

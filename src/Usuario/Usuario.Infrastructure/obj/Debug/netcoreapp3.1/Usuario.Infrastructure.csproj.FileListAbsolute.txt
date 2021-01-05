@@ -1,7 +1,3 @@
-C:\Users\HENRIQUE\source\repos\TesteTecnicoApp\src\Usuario\Usuario.Infrastructure\obj\Debug\netcoreapp3.1\Usuario.Infrastructure.csprojAssemblyReference.cache
-C:\Users\HENRIQUE\source\repos\TesteTecnicoApp\src\Usuario\Usuario.Infrastructure\obj\Debug\netcoreapp3.1\Usuario.Infrastructure.AssemblyInfoInputs.cache
-C:\Users\HENRIQUE\source\repos\TesteTecnicoApp\src\Usuario\Usuario.Infrastructure\obj\Debug\netcoreapp3.1\Usuario.Infrastructure.AssemblyInfo.cs
-C:\Users\HENRIQUE\source\repos\TesteTecnicoApp\src\Usuario\Usuario.Infrastructure\obj\Debug\netcoreapp3.1\Usuario.Infrastructure.csproj.CoreCompileInputs.cache
 C:\Users\HENRIQUE\source\repos\TesteTecnicoApp\src\Usuario\Usuario.Infrastructure\bin\Debug\netcoreapp3.1\Usuario.Infrastructure.deps.json
 C:\Users\HENRIQUE\source\repos\TesteTecnicoApp\src\Usuario\Usuario.Infrastructure\bin\Debug\netcoreapp3.1\Usuario.Infrastructure.runtimeconfig.json
 C:\Users\HENRIQUE\source\repos\TesteTecnicoApp\src\Usuario\Usuario.Infrastructure\bin\Debug\netcoreapp3.1\Usuario.Infrastructure.runtimeconfig.dev.json
@@ -9,6 +5,10 @@ C:\Users\HENRIQUE\source\repos\TesteTecnicoApp\src\Usuario\Usuario.Infrastructur
 C:\Users\HENRIQUE\source\repos\TesteTecnicoApp\src\Usuario\Usuario.Infrastructure\bin\Debug\netcoreapp3.1\Usuario.Infrastructure.pdb
 C:\Users\HENRIQUE\source\repos\TesteTecnicoApp\src\Usuario\Usuario.Infrastructure\bin\Debug\netcoreapp3.1\Usuario.Core.dll
 C:\Users\HENRIQUE\source\repos\TesteTecnicoApp\src\Usuario\Usuario.Infrastructure\bin\Debug\netcoreapp3.1\Usuario.Core.pdb
+C:\Users\HENRIQUE\source\repos\TesteTecnicoApp\src\Usuario\Usuario.Infrastructure\obj\Debug\netcoreapp3.1\Usuario.Infrastructure.csprojAssemblyReference.cache
+C:\Users\HENRIQUE\source\repos\TesteTecnicoApp\src\Usuario\Usuario.Infrastructure\obj\Debug\netcoreapp3.1\Usuario.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\HENRIQUE\source\repos\TesteTecnicoApp\src\Usuario\Usuario.Infrastructure\obj\Debug\netcoreapp3.1\Usuario.Infrastructure.AssemblyInfo.cs
+C:\Users\HENRIQUE\source\repos\TesteTecnicoApp\src\Usuario\Usuario.Infrastructure\obj\Debug\netcoreapp3.1\Usuario.Infrastructure.csproj.CoreCompileInputs.cache
 C:\Users\HENRIQUE\source\repos\TesteTecnicoApp\src\Usuario\Usuario.Infrastructure\obj\Debug\netcoreapp3.1\Usuario.Infrastructure.csproj.CopyComplete
 C:\Users\HENRIQUE\source\repos\TesteTecnicoApp\src\Usuario\Usuario.Infrastructure\obj\Debug\netcoreapp3.1\Usuario.Infrastructure.dll
 C:\Users\HENRIQUE\source\repos\TesteTecnicoApp\src\Usuario\Usuario.Infrastructure\obj\Debug\netcoreapp3.1\Usuario.Infrastructure.pdb

@@ -1,0 +1,46 @@
+
+<app-painel col="12" title="Cadastro">
+  <div class="col-md-6 user-container">
+    <h2 class="text-center">Cadastro Usuário</h2>
+    <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="nome">Nome:</label>
+        <input type="text" formControlName="nome" placeholder="nome" name="nome" class="form-control" id="nome">
+        <span class="text-danger" *ngIf="validaCampo('nome')">O Nome é obrigatório</span>
+      </div>
+  
+      <div class="form-group">
+        <label for="password">Sobrenome:</label>
+        <input type="text" formControlName="sobrenome" placeholder="sobrenome" name="sobrenome" class="form-control" id="sobrenome">
+        <span class="text-danger" *ngIf="validaCampo('sobrenome')">O Sobrenome é obrigatório</span>
+      </div>
+  
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input formControlName="email" placeholder="Email" name="email" class="form-control" id="email">
+        <span class="text-danger" *ngIf="validaCampo('email')">O Email é obrigatório</span>
+        <span class="text-danger" *ngIf="verificaEmailInValido()">O Email precisa ser válido</span>
+      </div>
+  
+      <div class="form-group">
+        <label for="escolaridade">Escolaridade</label>
+        <select class="form-control" id="escolaridade" formControlName="escolaridade">
+          <option value="1">Infantil</option>
+          <option value="2">Fundamental</option>
+          <option value="3">Médio</option>
+          <option value="4">Superior</option>
+        </select>
+        <span class="text-danger" *ngIf="validaCampo('escolaridade')">A data é obrigatória</span>
+      </div>
+  
+      <div class="form-group">
+        <label for="data">Data de Nascimento:</label>
+        <input type="date" formControlName="data" placeholder="Data de Nascimento" name="data" class="form-control" id="data">
+        <span class="text-danger" *ngIf="dataInvalida()">Data inválida, a data de nascmento não pode ser igual ou maior que hoje</span>
+      </div>
+  
+      <button class="btn btn-success">Salvar</button>
+      <a routerLink="/usuarios" class="btn btn-dark ml-2">Voltar</a>
+    </form>
+  </div>
+</app-painel>

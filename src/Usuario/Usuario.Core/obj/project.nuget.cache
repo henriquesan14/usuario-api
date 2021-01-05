@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "vQLFz4z+sD4gbyYKfLyjhOIo+qJ8B5sVERf7cQyYoqNBzBuhbDjV0xOQjQ/TYP7W1BbuvzF1sCtDbOULaC6NvA==",
+  "dgSpecHash": "IUJRE50SEOnSeNXBGms2AAiiYaYyY6COgqEMeuZeIDQ/QY8wmplOEaJCNENNF9kelHIO6tHe6uiqUfPdGHRHRA==",
   "success": true,
   "projectFilePath": "C:\\Users\\HENRIQUE\\source\\repos\\TesteTecnicoApp\\src\\Usuario\\Usuario.Core\\Usuario.Core.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\HENRIQUE\\.nuget\\packages\\fluentvalidation\\9.3.0\\fluentvalidation.9.3.0.nupkg.sha512",
+    "C:\\Users\\HENRIQUE\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\HENRIQUE\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
   ],
   "logs": []
