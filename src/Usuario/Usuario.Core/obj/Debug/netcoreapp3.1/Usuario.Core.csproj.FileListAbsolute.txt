@@ -1,0 +1,8 @@
+C:\Users\HENRIQUE\source\repos\TesteTecnicoApp\src\Usuario\Usuario.Core\bin\Debug\netcoreapp3.1\Usuario.Core.deps.json
+C:\Users\HENRIQUE\source\repos\TesteTecnicoApp\src\Usuario\Usuario.Core\bin\Debug\netcoreapp3.1\Usuario.Core.dll
+C:\Users\HENRIQUE\source\repos\TesteTecnicoApp\src\Usuario\Usuario.Core\bin\Debug\netcoreapp3.1\Usuario.Core.pdb
+C:\Users\HENRIQUE\source\repos\TesteTecnicoApp\src\Usuario\Usuario.Core\obj\Debug\netcoreapp3.1\Usuario.Core.AssemblyInfoInputs.cache
+C:\Users\HENRIQUE\source\repos\TesteTecnicoApp\src\Usuario\Usuario.Core\obj\Debug\netcoreapp3.1\Usuario.Core.AssemblyInfo.cs
+C:\Users\HENRIQUE\source\repos\TesteTecnicoApp\src\Usuario\Usuario.Core\obj\Debug\netcoreapp3.1\Usuario.Core.csproj.CoreCompileInputs.cache
+C:\Users\HENRIQUE\source\repos\TesteTecnicoApp\src\Usuario\Usuario.Core\obj\Debug\netcoreapp3.1\Usuario.Core.dll
+C:\Users\HENRIQUE\source\repos\TesteTecnicoApp\src\Usuario\Usuario.Core\obj\Debug\netcoreapp3.1\Usuario.Core.pdb
