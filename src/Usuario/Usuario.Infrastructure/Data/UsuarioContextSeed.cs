@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Usuario.Core.Entities;
+using Usuario.Core.Entities.Enums;
 
 namespace Usuario.Infrastructure.Data
 {
