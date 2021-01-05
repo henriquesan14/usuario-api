@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   {path: 'usuarios', loadChildren: () => import('./usuario/usuario.module').then(m => m.UsuarioModule)},
-  {path:'', pathMatch: 'full', redirectTo: 'pedidos'}
+  {path:'', pathMatch: 'full', redirectTo: 'usuarios'}
 ];
 
 @NgModule({
