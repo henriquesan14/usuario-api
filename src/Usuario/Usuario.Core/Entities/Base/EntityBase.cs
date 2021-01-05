@@ -8,6 +8,10 @@ namespace Usuario.Core.Entities.Base
     {
         public virtual TId Id { get; protected set; }
 
+        public DateTime? CreatedAt { get; set; }
+
+        public DateTime? UpdatedAt { get; set; }
+
         int? _requestedHashCode;
 
         public bool IsTransient()

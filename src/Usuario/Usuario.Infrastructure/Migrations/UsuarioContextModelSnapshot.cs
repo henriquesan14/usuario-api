@@ -26,6 +26,9 @@ namespace Usuario.Infrastructure.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<DateTime?>("CreatedAt")
+                        .HasColumnType("datetime2");
+
                     b.Property<DateTime>("Data")
                         .HasColumnType("datetime2");
 
@@ -40,6 +43,9 @@ namespace Usuario.Infrastructure.Migrations
 
                     b.Property<string>("Sobrenome")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
 
                     b.HasKey("Id");
 

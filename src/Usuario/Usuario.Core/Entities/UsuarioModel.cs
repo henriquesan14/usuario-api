@@ -17,8 +17,4 @@ namespace Usuario.Core.Entities
         public EscolaridadeEnum Escolaridade { get; set; }
     }
 
-    public class Email
-    {
-        public string Value;
-    }
 }

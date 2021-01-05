@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using FluentValidation.Results;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -7,6 +8,7 @@ using System.Net;
 using System.Threading.Tasks;
 using Usuario.Core.Entities;
 using Usuario.Core.Entities.DTO;
+using Usuario.Core.Entities.Validators;
 using Usuario.Core.Repositories;
 
 namespace Usuario.API.Controllers
@@ -18,11 +20,13 @@ namespace Usuario.API.Controllers
 
         private readonly IUsuarioRepository _repository;
         private readonly IMapper _mapper;
+        private readonly UsuarioValidator validator;
 
         public UsuarioController(IUsuarioRepository repository, IMapper mapper)
         {
             _repository = repository;
             _mapper = mapper;
+            validator = new UsuarioValidator();
         }
 
         [HttpGet]
@@ -50,8 +54,12 @@ namespace Usuario.API.Controllers
         [ProducesResponseType(typeof(UsuarioModel), (int)HttpStatusCode.Created)]
         public async Task<ActionResult> Save([FromBody] UsuarioDTO body)
         {
+            var results = validator.Validate(body);
+            if(results.Errors.Count > 0)
+            {
+                return BadRequest(results.Errors);
+            }
             var usuario = await _repository.AddAsync(_mapper.Map<UsuarioModel>(body));
-
             return Created(new Uri($"{Request.Path}/{usuario.Id}", UriKind.Relative), usuario);
         }
 
@@ -65,7 +73,12 @@ namespace Usuario.API.Controllers
             {
                 return NotFound();
             }
-             _mapper.Map<UsuarioDTO, UsuarioModel>(body, usuario);
+            var results = validator.Validate(body);
+            if (results.Errors.Count > 0)
+            {
+                return BadRequest(results.Errors);
+            }
+            _mapper.Map<UsuarioDTO, UsuarioModel>(body, usuario);
             await _repository.UpdateAsync(usuario);
             return NoContent();
         }

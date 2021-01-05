@@ -14,5 +14,6 @@ namespace Usuario.Infrastructure.Data
         }
 
         public DbSet<UsuarioModel> Usuarios { get; set; }
+
     }
 }

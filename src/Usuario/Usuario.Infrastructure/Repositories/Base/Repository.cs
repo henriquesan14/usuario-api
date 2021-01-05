@@ -55,6 +55,7 @@ namespace Usuario.Infrastructure.Repositories.Base
 
         public async Task<T> AddAsync(T entity)
         {
+            entity.CreatedAt = DateTime.Now;
             _dbContext.Set<T>().Add(entity);
             await _dbContext.SaveChangesAsync();
             return entity;
@@ -62,6 +63,7 @@ namespace Usuario.Infrastructure.Repositories.Base
 
         public async Task UpdateAsync(T entity)
         {
+            entity.UpdatedAt = DateTime.Now;
             _dbContext.Entry(entity).State = EntityState.Modified;
             await _dbContext.SaveChangesAsync();
         }

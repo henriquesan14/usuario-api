@@ -13,6 +13,8 @@ namespace Usuario.Infrastructure.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
+                    CreatedAt = table.Column<DateTime>(nullable: true),
+                    UpdatedAt = table.Column<DateTime>(nullable: true),
                     Nome = table.Column<string>(nullable: true),
                     Sobrenome = table.Column<string>(nullable: true),
                     Email = table.Column<string>(nullable: true),

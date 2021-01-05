@@ -10,7 +10,7 @@ using Usuario.Infrastructure.Data;
 namespace Usuario.Infrastructure.Migrations
 {
     [DbContext(typeof(UsuarioContext))]
-    [Migration("20210105012328_Initial")]
+    [Migration("20210105122153_Initial")]
     partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -28,6 +28,9 @@ namespace Usuario.Infrastructure.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<DateTime?>("CreatedAt")
+                        .HasColumnType("datetime2");
+
                     b.Property<DateTime>("Data")
                         .HasColumnType("datetime2");
 
@@ -42,6 +45,9 @@ namespace Usuario.Infrastructure.Migrations
 
                     b.Property<string>("Sobrenome")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("UpdatedAt")
+                        .HasColumnType("datetime2");
 
                     b.HasKey("Id");
 
